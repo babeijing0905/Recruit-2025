@@ -7,7 +7,7 @@ export default defineUserConfig({
 
     lang: 'zh-CN',
     title: 'YOLO Recruit',
-    description: 'YOLO 工作室 2024 招新',
+    description: 'YOLO 工作室 2025 招新',
 
     theme,
 
