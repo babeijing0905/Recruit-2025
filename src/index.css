@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 100% 12%; /* #00183C */
+    --foreground: 180 100% 97%; /* #EEF9FF */
+    
+    --primary: 210 100% 33%; /* #0052AA */
+    --primary-foreground: 180 100% 97%; /* #EEF9FF */
+    
+    --secondary: 120 100% 89%; /* #C6FFC7 */
+    --secondary-foreground: 220 100% 12%; /* #00183C */
+    
+    --accent: 180 100% 84%; /* #ACFFF7 */
+    --accent-foreground: 220 100% 12%; /* #00183C */
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 180 100% 97%; /* #EEF9FF */
+
+    --border: 210 100% 33%; /* #0052AA */
+    --input: 210 100% 33%; /* #0052AA */
+    --ring: 210 100% 33%; /* #0052AA */
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    font-weight: 600;
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
